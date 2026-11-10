@@ -5,10 +5,15 @@
 .env.production
 .phpactor.json
 .phpunit.result.cache
-/.claude/skills
-/.grok
+# AI Configuration
+/.claude/skills/
+/.grok/
+
+# AI Instruction Files
 /CLAUDE.md
 /AGENTS.md
+
+# Project Documentation
 /README.md
 /.codex
 /.cursor/
