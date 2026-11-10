@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .skeleton-mode p,
+  .skeleton-mode span,
+  .skeleton-mode h1,
+  .skeleton-mode h2,
+  .skeleton-mode h3,
+  .skeleton-mode button,
+  .skeleton-mode input,
+  .skeleton-mode td > div,
+  .skeleton-box {
+    @apply bg-gray-200 animate-pulse rounded select-none pointer-events-none;
+  }
+  .skeleton-mode th > span {
+    @apply !text-transparent !bg-gray-200 animate-pulse rounded select-none pointer-events-none !border-transparent !shadow-none;
+  }
+}
+@layer components {
+  .btn-primary-clicked {
+    @apply rounded-lg bg-violet-600 px-4 py-2 text-[13px] font-medium text-white shadow-sm transition hover:bg-violet-700 active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none;
+  }
+}

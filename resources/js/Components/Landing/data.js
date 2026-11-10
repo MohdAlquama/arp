@@ -1,0 +1,112 @@
+// Default content for the landing page.
+// Replace with real data from your Laravel controller via Inertia props.
+
+export const defaultData = {
+    brand: { name: 'Foodon', logo: null },
+    contact: {
+        phone: '01700000000',
+        email: 'hello@foodon.test',
+        address: 'House 00, Road 00, City, Country',
+    },
+    hero: {
+        badge: 'Fresh · Fast · Nearby',
+        title: 'Your Next Experience Awaits',
+        subtitle: 'Discover Restaurants Near You',
+        locationPlaceholder: 'Enter location to search restaurant',
+        image: null,
+    },
+    stats: [
+        { icon: 'store', value: '200+', label: 'Restaurants' },
+        { icon: 'users', value: '10k+', label: 'Happy Customers' },
+        { icon: 'bike', value: '30 min', label: 'Average Delivery' },
+    ],
+    services: [
+        { title: 'Order Online', text: 'Order for yourself or for the group, with no restrictions on order value.', image: null },
+        { title: 'Fast Delivery', text: 'Hot food at your door quickly, tracked live from kitchen to doorstep.', image: null },
+        { title: 'Enjoy Fresh Food', text: 'Meals prepared fresh by restaurants you already love.', image: null },
+    ],
+    stepsTitle: 'Order Food in a Few Seconds',
+    steps: ['Search & find food', 'Add to Cart', 'Checkout', 'Enjoy your food'],
+    stepImages: [null, null, null, null],
+    banners: [
+        { image: null, title: '20% off your first order', sub: 'Use code WELCOME20' },
+        { image: null, title: 'Free delivery weekends', sub: 'On orders above $15' },
+        { image: null, title: 'Combo deals', sub: 'Burgers, pizza and more' },
+    ],
+    categoriesTitle: 'Explore Our Wide Range of Food Categories',
+    categoriesSub: 'From comfort classics to gourmet delights, there is something for every craving.',
+    categories: [
+        { name: 'Indian', items: 5, image: null },
+        { name: 'Chinese', items: 2, image: null },
+        { name: 'Italian', items: 4, image: null },
+        { name: 'Fast Food', items: 5, image: null },
+        { name: 'Japanese', items: 3, image: null },
+        { name: 'Mexican', items: 2, image: null },
+        { name: 'Pasta', items: 2, image: null },
+        { name: 'Kabab & More', items: 4, image: null },
+    ],
+    galleryTitle: 'Your Daily Fresh Choice',
+    gallerySub: 'Enjoy fresh meals from your favorite restaurants, delivered fast to your doorstep.',
+    gallery: [null, null, null, null, null, null],
+    zone: {
+        title: 'Available delivery areas / Zone',
+        text: 'Check our delivery zones to see if we serve your area.',
+        zones: ['All over the City'],
+        pickerTitle: 'Explore Your Favorite Foods',
+        pickerText: "We're constantly expanding. Tell us where you'd like us to deliver next!",
+    },
+    join: {
+        title: 'Earn Money with Restaurant or Delivery',
+        text: 'Partner with us as a restaurant or ride with us as a delivery man.',
+        restaurant: { title: 'Open your own restaurant', text: 'Reach thousands of hungry customers.', button: 'Register', href: '#' },
+        delivery: { title: 'Become a Delivery Man', text: 'Earn on your own schedule.', button: 'Register', href: '#' },
+        restaurantApp: { title: 'Restaurant App', text: 'Scan or click to download', href: '#' },
+        deliveryApp: { title: 'Delivery Man App', text: 'Scan or click to download', href: '#' },
+    },
+    testimonialsTitle: 'Happy Customers',
+    testimonials: [
+        { name: 'Arif Hossain', review: 'Absolutely loved the food. Fresh, flavorful and right on time.', image: null },
+        { name: 'Sadia Rahman', review: 'Quality and speed stand out from every other app I have tried.', image: null },
+        { name: 'Mitu Dey', review: 'Great taste, super reasonable prices. My go-to for lunch.', image: null },
+        { name: 'Tanvir Ahmed', review: 'Ordering was easy and my food arrived piping hot.', image: null },
+        { name: 'Jhon Dhoe', review: 'Every dish feels freshly prepared. You can tell they care.', image: null },
+    ],
+    faqTitle: 'Frequently Asked Questions',
+    faqSub: 'Find quick answers to common questions about our services',
+    faq: {
+        Customer: [
+            { q: 'How do I place an order?', a: 'Browse your favorite items, add them to your cart and confirm checkout.' },
+            { q: 'How do I cancel or change my order?', a: 'You can cancel or modify an order before the restaurant confirms it.' },
+        ],
+        Restaurant: [
+            { q: 'How can my restaurant join?', a: 'Fill out the partner registration form and our team will contact you.' },
+            { q: 'Can I update my menu or prices anytime?', a: 'Yes, update items, prices and availability from your dashboard.' },
+        ],
+        Deliveryman: [
+            { q: 'How do I become a delivery partner?', a: 'Apply on the website or app with your details and documents.' },
+            { q: 'How do I get delivery requests?', a: 'Once online, nearby orders appear automatically in the driver app.' },
+        ],
+    },
+    newsletter: { title: "Let's Connect!", text: 'Stay up to date with restaurants around you. Subscribe with email.' },
+    quick: [
+        { icon: 'store', title: 'Open Restaurant', text: 'Partner with us' },
+        { icon: 'bike', title: 'Become a delivery man', text: 'Earn on your schedule' },
+        { icon: 'user', title: 'Profile', text: 'Manage your account' },
+        { icon: 'help', title: 'Help & Support', text: "We're here 24/7" },
+    ],
+    app: {
+        title: 'Order in taps, not tabs.',
+        text: 'Download the app for exclusive offers, faster checkout and live order tracking.',
+        playStore: '#',
+        appStore: '#',
+    },
+    footerLinks: {
+        'Quick Links': ['About Us', 'My Wallet', 'Loyalty Points', 'Cuisines'],
+        Explore: ['Near Restaurants', 'Recommended Restaurants', 'Offers', 'Track Order'],
+        Other: ['Privacy Policy', 'Terms & Conditions', 'Refund Policy', 'Cancellation Policy'],
+    },
+    cookieText: 'We use cookies to enhance your browsing experience.',
+    languages: ['en', 'bn', 'ar', 'es'],
+    cuisinesMenu: ['Indian', 'Chinese', 'Italian', 'Fast Food'],
+    restaurantsMenu: ['Near You', 'Recommended', 'New', 'Popular'],
+};
