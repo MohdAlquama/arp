@@ -3,19 +3,21 @@ import { Link } from "@inertiajs/react";
 import {
     ArrowRight,
     ArrowUpRight,
-    Facebook,
-    Instagram,
-    Twitter,
-    Youtube,
     Mail,
     Phone,
     MapPin,
     Footprints,
     ChevronRight,
     Send,
-    Heart,
+    Heart
 } from "lucide-react";
 
+import {
+    FaFacebookF,
+    FaInstagram,
+    FaXTwitter,
+    FaYoutube
+} from "react-icons/fa6";
 const footerLinks = {
     company: [
         { label: "About Us", href: "/about" },

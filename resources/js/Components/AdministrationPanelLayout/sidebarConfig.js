@@ -27,18 +27,11 @@ export const MAIN_MENU = [
     icon: BarChart3,
     children: [
       {
-        key: "overview",
-        label: "Overview",
-        route: "admin.overview",
-        href: "/admin/overview",
-      },
-      {
         key: "Home_Design",
         label: "Home Design",
         route: "admin.website.home.index",
         href: "/admin/website/home",
       }
-      
     ],
   },
   {
