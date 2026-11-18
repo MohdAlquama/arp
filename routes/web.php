@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\ContactController;
 use App\Http\Controllers\Api\HeroSlideController;
 use App\Http\Controllers\Api\HomeCategoryApiController;
 use App\Http\Controllers\Api\NewArrivalApiController;
@@ -23,7 +24,13 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return Inertia::render('Website/About/Index');
 });
-Route::get('/header', [HeaderController::class, 'index']);
+
+Route::get('/contact', [ContactController::class, 'index'])->name('contact.index');
+Route::post('/contact', [ContactController::class, 'store'])
+    ->middleware('throttle:5,10')   // max 5 enquiries per IP every 10 minutes
+    ->name('contact.store');
+    
+    Route::get('/header', [HeaderController::class, 'index']);
 Route::get('/products/category/{category}', [ProductListingController::class, 'index'])
     ->whereNumber('category')
     ->name('products.category');

@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\UserManagementController;
 use App\Http\Controllers\ReportController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admin\ContactEnquiryController;
 
 Route::prefix('admin')->name('admin.')->group(function () {
     Route::get('/users', [UserManagementController::class, 'index'])->name('users.index');
@@ -14,4 +15,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
     Route::get('/reports/export', [ReportController::class, 'export'])->name('reports.export');
     Route::prefix('website')->name('website.')->group(base_path('routes/website/websiteControl.php'));
     Route::prefix('stock')->name('stock.')->group(base_path('routes/stock/stock.php'));
+    Route::get('/enquiries', [ContactEnquiryController::class, 'index'])->name('admin.enquiries.index');
+    Route::patch('/enquiries/{enquiry}', [ContactEnquiryController::class, 'update'])->name('admin.enquiries.update');
+    Route::delete('/enquiries/{enquiry}', [ContactEnquiryController::class, 'destroy'])->name('admin.enquiries.destroy');
 });

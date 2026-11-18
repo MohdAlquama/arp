@@ -87,15 +87,11 @@ export default function ResponsiveHeader() {
 
     const staticNavigation = [
         {
-            id: 'new-in',
-            name: 'NEW IN',
-            href: '/new-in',
+            id: 'Home',
+            name: 'HOME',
+            href: '/',
         },
-        {
-            id: 'top-picks',
-            name: 'TOP PICKS',
-            href: '/top-picks',
-        },
+      
     ];
 
     /*
@@ -127,15 +123,15 @@ export default function ResponsiveHeader() {
         ...dynamicNavigation,
 
         {
-            id: 'luxure',
-            name: 'LUXURE',
-            href: '/luxure',
+            id: 'about-us',
+            name: 'ABOUT US',
+            href: '/about',
         },
 
         {
-            id: 'deals',
-            name: 'DEALS',
-            href: '/deals',
+            id: 'contact',
+            name: 'CONTACT',
+            href: '/contact',
             highlight: true,
         },
     ];
@@ -149,59 +145,59 @@ export default function ResponsiveHeader() {
     const mobileNavigation = [
         ...navigation,
 
-        {
-            id: 'shop-by-occasion',
-            name: 'SHOP BY OCCASION',
-            href: '/occasion',
+        // {
+        //     id: 'shop-by-occasion',
+        //     name: 'SHOP BY OCCASION',
+        //     href: '/occasion',
 
-            children: [
-                {
-                    id: 'wedding',
-                    name: 'Wedding',
-                    href: '/occasion/wedding',
-                },
-                {
-                    id: 'party-wear',
-                    name: 'Party Wear',
-                    href: '/occasion/party-wear',
-                },
-                {
-                    id: 'office-wear',
-                    name: 'Office Wear',
-                    href: '/occasion/office-wear',
-                },
-                {
-                    id: 'casual-wear',
-                    name: 'Casual Wear',
-                    href: '/occasion/casual-wear',
-                },
-            ],
-        },
+        //     children: [
+        //         {
+        //             id: 'wedding',
+        //             name: 'Wedding',
+        //             href: '/occasion/wedding',
+        //         },
+        //         {
+        //             id: 'party-wear',
+        //             name: 'Party Wear',
+        //             href: '/occasion/party-wear',
+        //         },
+        //         {
+        //             id: 'office-wear',
+        //             name: 'Office Wear',
+        //             href: '/occasion/office-wear',
+        //         },
+        //         {
+        //             id: 'casual-wear',
+        //             name: 'Casual Wear',
+        //             href: '/occasion/casual-wear',
+        //         },
+        //     ],
+        // },
 
-        {
-            id: 'accessories',
-            name: 'ACCESSORIES',
-            href: '/accessories',
-        },
+        // {
+        //     id: 'accessories',
+        //     name: 'ACCESSORIES',
+        //     href: '/accessories',
+        // },
 
-        {
-            id: 'my-account',
-            name: 'MY ACCOUNT',
-            href: '/account',
+        // {
+        //     id: 'my-account',
+        //     name: 'MY ACCOUNT',
+        //     href: '/account',
 
-            children: [
-                {
-                    id: 'my-profile',
-                    name: 'My Profile',
-                    href: '/account',
-                },
-                {
-                    id: 'my-wishlist',
-                    name: 'Wishlist',
-                    href: '/wishlist',
-                },
-            ],
-        },
+        //     children: [
+        //         {
+        //             id: 'my-profile',
+        //             name: 'My Profile',
+        //             href: '/account',
+        //         },
+        //         {
+        //             id: 'my-wishlist',
+        //             name: 'Wishlist',
+        //             href: '/wishlist',
+        //         },
+        //     ],
+        // },
     ];
 
     /*
@@ -419,27 +415,27 @@ export default function ResponsiveHeader() {
 
                         {/* ACCOUNT */}
 
-                        <Link
+                        {/* <Link
                             href="/account"
                             aria-label="My account"
                             className="hidden transition duration-200 hover:text-[#bd8b32] sm:block"
                         >
                             <UserRound size={23} strokeWidth={1.8} />
-                        </Link>
+                        </Link> */}
 
                         {/* WISHLIST */}
 
-                        <Link
+                        {/* <Link
                             href="/wishlist"
                             aria-label="Wishlist"
                             className="hidden transition duration-200 hover:text-[#bd8b32] sm:block"
                         >
                             <Heart size={22} strokeWidth={1.8} />
-                        </Link>
+                        </Link> */}
 
                         {/* CART */}
 
-                        <Link
+                        {/* <Link
                             href="/cart"
                             aria-label="Shopping bag"
                             className="relative transition duration-200 hover:text-[#bd8b32]"
@@ -449,7 +445,7 @@ export default function ResponsiveHeader() {
                             <span className="absolute -right-2 -top-2 flex h-[16px] min-w-[16px] items-center justify-center rounded-full bg-[#bd8b32] px-1 text-[9px] font-semibold text-white">
                                 0
                             </span>
-                        </Link>
+                        </Link> */}
 
                     </div>
 

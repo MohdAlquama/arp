@@ -42,22 +42,22 @@ const footerLinks = {
 
 const socialLinks = [
     {
-        icon: Instagram,
+        icon: FaInstagram,
         href: "#",
         label: "Instagram",
     },
     {
-        icon: Facebook,
+        icon: FaFacebookF,
         href: "#",
         label: "Facebook",
     },
     {
-        icon: Twitter,
+        icon: FaXTwitter,
         href: "#",
         label: "Twitter",
     },
     {
-        icon: Youtube,
+        icon: FaYoutube,
         href: "#",
         label: "YouTube",
     },
