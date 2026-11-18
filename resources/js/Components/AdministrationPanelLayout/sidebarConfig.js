@@ -96,5 +96,11 @@ export const STOCK_AND_INVENTORY_MANAGEMENT=[
   
 ]
 export const BOTTOM_MENU = [
- 
+ {
+    key: "Enquiries",
+    label: "Enquiries",
+    icon: MousePointerClick,
+    route: "admin.index",
+    href: "/admin/enquiries",
+  }
 ];

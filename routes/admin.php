@@ -15,7 +15,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
     Route::get('/reports/export', [ReportController::class, 'export'])->name('reports.export');
     Route::prefix('website')->name('website.')->group(base_path('routes/website/websiteControl.php'));
     Route::prefix('stock')->name('stock.')->group(base_path('routes/stock/stock.php'));
-    Route::get('/enquiries', [ContactEnquiryController::class, 'index'])->name('admin.enquiries.index');
-    Route::patch('/enquiries/{enquiry}', [ContactEnquiryController::class, 'update'])->name('admin.enquiries.update');
-    Route::delete('/enquiries/{enquiry}', [ContactEnquiryController::class, 'destroy'])->name('admin.enquiries.destroy');
+    Route::get('/enquiries', [ContactEnquiryController::class, 'index'])->name('index');
+    Route::patch('/enquiries/{enquiry}', [ContactEnquiryController::class, 'update'])->name('update');
+    Route::delete('/enquiries/{enquiry}', [ContactEnquiryController::class, 'destroy'])->name('destroy');
 });
