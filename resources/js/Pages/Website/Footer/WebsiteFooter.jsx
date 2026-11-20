@@ -9,14 +9,14 @@ import {
     Footprints,
     ChevronRight,
     Send,
-    Heart
+    Heart,
 } from "lucide-react";
 
 import {
     FaFacebookF,
     FaInstagram,
     FaXTwitter,
-    FaYoutube
+    FaYoutube,
 } from "react-icons/fa6";
 const footerLinks = {
     company: [
@@ -33,34 +33,34 @@ const footerLinks = {
         { label: "Formal Shoes", href: "/products" },
     ],
 
-    information: [
-        { label: "Privacy Policy", href: "/privacy-policy" },
-        { label: "Terms & Conditions", href: "/terms-and-conditions" },
-        { label: "Disclaimer", href: "/disclaimer" },
-    ],
+    // information: [
+    //     { label: "Privacy Policy", href: "/privacy-policy" },
+    //     { label: "Terms & Conditions", href: "/terms-and-conditions" },
+    //     { label: "Disclaimer", href: "/disclaimer" },
+    // ],
 };
 
 const socialLinks = [
     {
         icon: FaInstagram,
-        href: "#",
+        href: "https://www.instagram.com/arpfootwear.gida",
         label: "Instagram",
     },
     {
         icon: FaFacebookF,
-        href: "#",
+        href: "https://www.facebook.com/arpfootwears",
         label: "Facebook",
     },
-    {
-        icon: FaXTwitter,
-        href: "#",
-        label: "Twitter",
-    },
-    {
-        icon: FaYoutube,
-        href: "#",
-        label: "YouTube",
-    },
+    // {
+    //     icon: FaXTwitter,
+    //     href: "#",
+    //     label: "Twitter",
+    // },
+    // {
+    //     icon: FaYoutube,
+    //     href: "#",
+    //     label: "YouTube",
+    // },
 ];
 
 const FooterHeading = ({ children }) => (
@@ -98,7 +98,6 @@ export default function WebsiteFooter() {
 
     return (
         <footer className="relative overflow-hidden bg-[#151515] text-white">
-
             {/* Decorative Background */}
             <div className="pointer-events-none absolute -right-40 -top-40 h-[450px] w-[450px] rounded-full border border-white/[0.04]" />
             <div className="pointer-events-none absolute -right-20 -top-20 h-[300px] w-[300px] rounded-full border border-white/[0.04]" />
@@ -106,7 +105,6 @@ export default function WebsiteFooter() {
             {/* Newsletter Section */}
             <div className="relative border-b border-white/10">
                 <div className="mx-auto grid max-w-[1400px] grid-cols-1 items-center gap-10 px-5 py-14 sm:px-8 lg:grid-cols-2 lg:px-12 lg:py-20">
-
                     <div>
                         <span className="text-xs font-bold uppercase tracking-[0.3em] text-[#c49a6c]">
                             Stay Connected
@@ -120,13 +118,13 @@ export default function WebsiteFooter() {
                         </h2>
 
                         <p className="mt-4 max-w-lg text-sm leading-7 text-gray-400">
-                            Discover new footwear styles, fresh collections,
-                            and updates from the world of ARP Footwear.
+                            Discover new footwear styles, fresh collections, and
+                            updates from the world of ARP Footwear.
                         </p>
                     </div>
 
                     <div className="lg:pl-10">
-                        <form
+                        {/* <form
                             onSubmit={handleSubscribe}
                             className="flex flex-col gap-3 sm:flex-row"
                         >
@@ -153,20 +151,18 @@ export default function WebsiteFooter() {
                                 Subscribe
                                 <Send size={16} />
                             </button>
-                        </form>
+                        </form> */}
 
-                        <p className="mt-3 text-xs text-gray-500">
+                        {/* <p className="mt-3 text-xs text-gray-500">
                             Stay updated with ARP. No unnecessary emails.
-                        </p>
+                        </p> */}
                     </div>
                 </div>
             </div>
 
             {/* Main Footer */}
             <div className="relative mx-auto max-w-[1400px] px-5 py-16 sm:px-8 lg:px-12 lg:py-20">
-
                 <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-[1.4fr_0.8fr_0.9fr_0.9fr_1.1fr] lg:gap-10">
-
                     {/* Brand Column */}
                     <div>
                         <Link
@@ -190,9 +186,9 @@ export default function WebsiteFooter() {
                         </Link>
 
                         <p className="mt-6 max-w-xs text-sm leading-7 text-gray-400">
-                            Step into your own style with ARP Footwear.
-                            Explore footwear that brings together modern
-                            design and everyday expression.
+                            Step into your own style with ARP Footwear. Explore
+                            footwear that brings together modern design and
+                            everyday expression.
                         </p>
 
                         {/* Social Icons */}
@@ -247,7 +243,7 @@ export default function WebsiteFooter() {
                     </div>
 
                     {/* Information */}
-                    <div>
+                    {/*  <div>
                         <FooterHeading>Information</FooterHeading>
 
                         <ul className="space-y-4">
@@ -260,13 +256,12 @@ export default function WebsiteFooter() {
                             ))}
                         </ul>
                     </div>
-
+                    */}
                     {/* Contact */}
                     <div>
                         <FooterHeading>Get In Touch</FooterHeading>
 
                         <div className="space-y-6">
-
                             <div className="flex items-start gap-4">
                                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/[0.06] text-[#c49a6c]">
                                     <MapPin size={18} />
@@ -277,7 +272,8 @@ export default function WebsiteFooter() {
                                         Our Location
                                     </p>
                                     <p className="mt-2 text-sm leading-6 text-gray-400">
-                                        Add your business address here.
+                                        AL-9, Sector-13, GIDA Industrial Area
+                                        Phase 1, Gorakhpur, Uttar Pradesh 273209
                                     </p>
                                 </div>
                             </div>
@@ -292,7 +288,19 @@ export default function WebsiteFooter() {
                                         Phone
                                     </p>
                                     <p className="mt-2 text-sm text-gray-400">
-                                        Add your contact number
+                                        <a
+                                            href="tel:+917310100110"
+                                            className="hover:text-white transition-colors"
+                                        >
+                                            +91 73101 00110
+                                        </a>
+                                        {" / "}
+                                        <a
+                                            href="tel:+919918876026"
+                                            className="hover:text-white transition-colors"
+                                        >
+                                            99188 76026
+                                        </a>
                                     </p>
                                 </div>
                             </div>
@@ -302,16 +310,19 @@ export default function WebsiteFooter() {
                                     <Mail size={18} />
                                 </div>
 
-                                <div>
-                                    <p className="text-xs font-bold uppercase tracking-wider text-white">
-                                        Email
-                                    </p>
-                                    <p className="mt-2 break-all text-sm text-gray-400">
-                                        Add your business email
-                                    </p>
-                                </div>
-                            </div>
+                             <div>
+    <p className="text-xs font-bold uppercase tracking-wider text-white">
+        Email
+    </p>
 
+    <a
+        href="mailto:sale@arpfootwear.com"
+        className="mt-2 block break-all text-sm text-gray-400 transition-colors duration-300 hover:text-[#c49a6c]"
+    >
+        sale@arpfootwear.com
+    </a>
+</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -319,12 +330,8 @@ export default function WebsiteFooter() {
                 {/* Brand Statement */}
                 <div className="mt-16 overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] px-6 py-8 sm:px-10">
                     <div className="flex flex-col items-center justify-between gap-5 text-center sm:flex-row sm:text-left">
-
                         <div className="flex items-center gap-3">
-                            <Footprints
-                                size={30}
-                                className="text-[#c49a6c]"
-                            />
+                            <Footprints size={30} className="text-[#c49a6c]" />
 
                             <div>
                                 <p className="font-serif text-xl italic text-white sm:text-2xl">
@@ -340,7 +347,7 @@ export default function WebsiteFooter() {
                             href="/products"
                             className="inline-flex items-center gap-2 text-sm font-bold text-[#c49a6c] transition hover:text-white"
                         >
-                            Explore Our Collection
+                            Explore Our products
                             <ArrowUpRight size={17} />
                         </Link>
                     </div>
@@ -350,9 +357,9 @@ export default function WebsiteFooter() {
             {/* Bottom Copyright */}
             <div className="border-t border-white/10">
                 <div className="mx-auto flex max-w-[1400px] flex-col items-center justify-between gap-4 px-5 py-6 text-center sm:px-8 md:flex-row lg:px-12">
-
                     <p className="text-xs text-gray-500">
-                        © {new Date().getFullYear()} ARP Footwear. All rights reserved.
+                        © {new Date().getFullYear()} ARP Footwear. All rights
+                        reserved.
                     </p>
 
                     <p className="flex items-center gap-1.5 text-xs text-gray-500">
@@ -377,7 +384,6 @@ export default function WebsiteFooter() {
                     >
                         Back To Top ↑
                     </a>
-
                 </div>
             </div>
         </footer>
