@@ -315,12 +315,22 @@ export default function WebsiteFooter() {
         Email
     </p>
 
-    <a
-        href="mailto:sale@arpfootwear.com"
-        className="mt-2 block break-all text-sm text-gray-400 transition-colors duration-300 hover:text-[#c49a6c]"
-    >
-        sale@arpfootwear.com
-    </a>
+   <a
+    href={`mailto:sale@arpfootwear.com?subject=${encodeURIComponent(
+        "Product Inquiry - ARP Footwear"
+    )}&body=${encodeURIComponent(
+        `Dear ARP Footwear Team,
+
+I am interested in your products. Please share more details.
+
+Thank you,
+Name: Write your name here
+Phone: Write your contact number here`
+    )}`}
+    className="mt-2 block break-all text-sm text-gray-400 transition-colors duration-300 hover:text-[#c49a6c]"
+>
+    sale@arpfootwear.com
+</a>
 </div>
                             </div>
                         </div>
